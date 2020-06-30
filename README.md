@@ -1,5 +1,5 @@
-# myCinema project [![Build Status](https://travis-ci.com/github/tanchak123/myCinema.svg?branch=master)](https://travis-ci.com/github/tanchak123/myCinema)
-
+# myCinema project [![Build Status](https://travis-ci.com/tanchak123/myCinema.svg?branch=master)](https://travis-ci.com/github/tanchak123/myCinema)
+# myCinema project
 ## Project purpose
 
 ### For real purpose
@@ -27,4 +27,4 @@
 
 ## Author
 
-[Andrey Tanchak] (https://www.linkedin.com/in/andrey-tanchak-8a1a141b1/)
+[Andrey Tanchak](https://www.linkedin.com/in/andrey-tanchak-8a1a141b1/)
