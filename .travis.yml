@@ -1,5 +1,8 @@
-language: java
+version: ~> 1.0
+
 os: windows
+language: java
+
 jdk:
   - openjdk11
 script:
