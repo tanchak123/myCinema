@@ -1,9 +1,12 @@
-
 #myCinema project
+
 #Project purpose
+
 ### For real purpose
+
 * Example of a cinema operating system
 ### For myself
+
 * ORM technology testing examples
 * Hibernate technology testing examples
 
@@ -16,10 +19,12 @@
 * Travis CI
 
 ##Available Functions
+
 * view all available cinema halls, movies, movie sessions, employees, users
 * get user by email
 * registration
 * log in
 
 ##Author
+
 Andrey Tanchak
