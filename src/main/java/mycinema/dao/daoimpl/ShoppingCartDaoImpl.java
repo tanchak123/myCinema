@@ -39,7 +39,7 @@ public class ShoppingCartDaoImpl implements ShoppingCartDao {
             Hibernate.initialize(shoppingCart.getTickets());
             return shoppingCart;
         } catch (DataProcessingException e) {
-            throw new DataProcessingException("Can'nt get User entity!", e);
+            throw new DataProcessingException("Can't get User entity!", e);
         }
     }
 
@@ -49,6 +49,21 @@ public class ShoppingCartDaoImpl implements ShoppingCartDao {
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
             session.update(shoppingCart);
+            transaction.commit();
+        } catch (DataProcessingException e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            throw new DataProcessingException("Can't update ShoppingCart entity", e);
+        }
+    }
+
+    @Override
+    public void delete(ShoppingCart shoppingCart) {
+        Transaction transaction = null;
+        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+            transaction = session.beginTransaction();
+            session.delete(shoppingCart);
             transaction.commit();
         } catch (DataProcessingException e) {
             if (transaction != null) {

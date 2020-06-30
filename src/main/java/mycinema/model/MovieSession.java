@@ -13,12 +13,12 @@ import javax.persistence.Table;
 public class MovieSession {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
     @ManyToOne
-    Movie movie;
+    private Movie movie;
     @ManyToOne
-    CinemaHall cinemaHall;
-    LocalDate localDate;
+    private CinemaHall cinemaHall;
+    private LocalDate localDate;
 
     public MovieSession() {
     }

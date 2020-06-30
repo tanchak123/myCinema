@@ -18,12 +18,12 @@ public class ShoppingCart {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
 
     @OneToOne
     @MapsId
     @JoinColumn(name = "user_or_cart_id")
-    User user;
+    private User user;
 
     @OneToMany
     @JoinTable(
@@ -31,7 +31,7 @@ public class ShoppingCart {
             joinColumns = @JoinColumn(name = "cart_id", nullable = false),
             inverseJoinColumns = @JoinColumn(name = "tickets_ids")
     )
-    List<Ticket> tickets;
+    private List<Ticket> tickets;
 
     public ShoppingCart() {
     }

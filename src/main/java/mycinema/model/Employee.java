@@ -17,15 +17,15 @@ public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
-    String name;
+    private Long id;
+    private String name;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "employee_cinema_hall",
             joinColumns = @JoinColumn(name = "employee_id"),
             inverseJoinColumns = @JoinColumn(name = "cinema_hall_id"))
 
-    List<CinemaHall> hallList;
+    private List<CinemaHall> hallList;
 
     public Employee() {
     }

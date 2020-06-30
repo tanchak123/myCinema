@@ -14,11 +14,11 @@ import javax.persistence.Table;
 public class CinemaHall {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
-    int capacity;
-    String description;
+    private Long id;
+    private int capacity;
+    private String description;
     @ManyToMany(mappedBy = "hallList", fetch = FetchType.EAGER)
-    List<Employee> employees;
+    private List<Employee> employees;
 
     public CinemaHall() {
     }
