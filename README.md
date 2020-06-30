@@ -1,6 +1,6 @@
-#myCinema project
+# myCinema project [![Build Status](https://travis-ci.com/github/tanchak123/myCinema.svg?branch=master)](https://travis-ci.com/github/tanchak123/myCinema)
 
-#Project purpose
+## Project purpose
 
 ### For real purpose
 
@@ -10,7 +10,7 @@
 * ORM technology testing examples
 * Hibernate technology testing examples
 
-##Project structure
+## Project structure
 * Java 11
 * Apache Maven CheckStyle Plugin 3.1.1
 * Hibernate 5.4.15
@@ -18,13 +18,13 @@
 * Log4j2 2.13
 * Travis CI
 
-##Available Functions
+## Available Functions
 
 * view all available cinema halls, movies, movie sessions, employees, users
 * get user by email
 * registration
 * log in
 
-##Author
+## Author
 
-Andrey Tanchak
+[Andrey Tanchak] (https://www.linkedin.com/in/andrey-tanchak-8a1a141b1/)
